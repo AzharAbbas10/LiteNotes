@@ -19,28 +19,34 @@ To get this project up and running on your local machine, follow these steps:
    git clone https://github.com/AzharAbbas10/LiteNotes.git
 
 Change your working directory to the project folder:
+
     cd LiteNotes
    
 Install PHP dependencies using Composer:
-   composer install
+
+    composer install
 
 Generate a new application key:
+
     php artisan key:generate
 
 Open the .env file in your text editor and configure your database settings:
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=litenotes
-DB_USERNAME=root
-DB_PASSWORD=
+
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=litenotes
+    DB_USERNAME=root
+    DB_PASSWORD=
 
 Create a new MySQL database for your project.
 
 Migrate the database:
-php artisan migrate
+
+    php artisan migrate
 
 Start the Laravel development server:
-php artisan serve
+
+    php artisan serve
 
 Your Laravel application should now be running at http://127.0.0.1:8000.
